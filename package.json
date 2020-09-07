@@ -12,7 +12,8 @@
     "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|json|ts|tsx)\"",
     "format": "yarn run prettier --write ",
     "check-format": "yarn run prettier --check",
-    "validate": "yarn run check-types && yarn run check-format && yarn run lint && yarn run build"
+    "validate": "yarn run check-types && yarn run check-format && yarn run lint && yarn test && yarn run build",
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.7",
@@ -25,6 +26,7 @@
     "eslint-config-prettier": "^6.9.0",
     "eslint-config-react-app": "^5.2.1",
     "husky": "^4.0.0",
+    "jest": "^26.4.2",
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
     "typescript": "^3.7.4"
